@@ -12,7 +12,7 @@
     background-color: #2196f3;
 }
 .calculator-content {
-    width: 400px;
+    width: 500px;
     text-align: center;
 }
 h3 {
@@ -26,7 +26,7 @@ h3 {
 .age {
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .calculate {
     background-color: black;
@@ -71,6 +71,9 @@ h3 {
 }
 @media (max-width: 767px) {
     .calculator-content {
-        width: fit-content;
+        width: 380px;
     }   
+    .calculate {
+        padding: 1rem;
+    }
 }
