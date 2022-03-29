@@ -1,11 +1,9 @@
 let date = document.querySelector("input");
 button = document.querySelector("button");
 
-
 let months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 button.onclick = (check);
-
 
 function check() {
   let today = new Date();
@@ -28,7 +26,6 @@ function check() {
      
   let day,months,years;
 
-
   if (
     BirthdayDate.birthYear > currentYear ||
      ((BirthdayDate.birthMonth > currentMonth && BirthdayDate.birthYear > currentYear) ) ||
@@ -45,6 +42,8 @@ function check() {
   } else {
     months = currentMonth - BirthdayDate.birthMonth;
   }
+
+
   if (BirthdayDate.birthDate > currentDate) {
     months--;
     days = months[currentDate] + currentDate - BirthdayDate.birthDate;
@@ -61,11 +60,8 @@ function check() {
 function checker(year) {
 
   if (currentYear % 4 == 0 || (currentYear % 100 == 0 && currentYear % 400 == 0)) {
-
     months[1] = 29;
-
   } else {
     months[1] = 28;
   }
-
 }
