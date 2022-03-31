@@ -38,7 +38,7 @@ function check() {
 
   if (BirthdayDate.birthMonth > currentMonth) {
     years--;
-    months = BirthdayDate.birthMonth - currentMonth;
+    months = (12 + currentMonth ) - BirthdayDate.birthMonth ;
   } else {
     months = currentMonth - BirthdayDate.birthMonth;
   }
